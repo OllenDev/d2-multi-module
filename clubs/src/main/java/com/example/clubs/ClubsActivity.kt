@@ -10,6 +10,7 @@ import com.example.core.CoreComponent
 import com.example.core.CoreComponentInjector
 import com.example.core.MyCoreThing
 import com.example.net.NetworkApi
+import kotlinx.android.synthetic.main.activity_clubs.*
 
 import javax.inject.Inject
 
@@ -31,8 +32,7 @@ class ClubsActivity : AppCompatActivity() {
             .build()
             .inject(this)
 
-        val button = findViewById<Button>(R.id.goToFeedButton)
-        button.setOnClickListener {
+        goToFeedButton.setOnClickListener {
             val intent = Intent(Intent.ACTION_VIEW, Uri.parse("mmd2://feed"))
             startActivity(intent)
         }
