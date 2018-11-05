@@ -1,5 +1,6 @@
 package com.example.core
 
+import com.example.net.NetModule
 import dagger.Module
 import dagger.Provides
 
